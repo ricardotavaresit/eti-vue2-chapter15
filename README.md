@@ -6,6 +6,7 @@
 - Class 02: Create component search CEP in Vue JS
 - Class 03: Create AJAX request in Vue JS
 - Class 04: Create preloader in Vue JS
+- Class 07: Create reset response in Vue JS
 
 ## Technologies used
 - VueJS;
