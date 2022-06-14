@@ -2,7 +2,7 @@
 
 <h2>Chapter 15 - Axios</h2>
 
-
+- Class 01: Install Axios in Vue JS
 
 ## Technologies used
 - VueJS;
