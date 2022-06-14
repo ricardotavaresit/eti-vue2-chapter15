@@ -3,6 +3,7 @@
 <h2>Chapter 15 - Axios</h2>
 
 - Class 01: Install Axios in Vue JS
+- Class 02: Create component search CEP in Vue JS
 
 ## Technologies used
 - VueJS;
