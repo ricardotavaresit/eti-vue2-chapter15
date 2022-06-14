@@ -1,23 +1,31 @@
 <template>
   <div>
     <form v-on:submit.prevent="onSubmmit">
-      <input type="text" placeholder="CEP" v-model="cep"/>
-      <button type="submit" >Search</button>
+      <input type="text" placeholder="CEP" v-model="cep" />
+      <button type="submit">Search</button>
     </form>
+    <div v-if="adress.cep">{{ adress }}</div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
-      msg: "Hi",
       cep: "",
+      adress: {},
     };
   },
   methods: {
     onSubmmit() {
-      alert("oi" + this.cep);
+      axios
+        .get(`https://viacep.com.br/ws/${this.cep}/json`)
+        .then((response) => {
+          this.adress = response.data;
+          console.log(this.adress);
+        })
+        .catch((error) => console.error(error));
     },
   },
 };
